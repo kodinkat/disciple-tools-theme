@@ -11,6 +11,12 @@
             <td id="workflows_props_node_start_name">[ start ]</td>
         </tr>
         <tr>
+            <td style="text-align: right;">enabled:</td>
+            <td>
+                <input type="checkbox" id="workflows_props_node_start_enabled">
+            </td>
+        </tr>
+        <tr>
             <td colspan="2">triggers:
                 <hr>
             </td>

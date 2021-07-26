@@ -120,10 +120,12 @@ function dt_utilities_workflows_scripts() {
     if ( isset( $_GET["page"] ) && ( $_GET["page"] === 'dt_utilities' ) ) {
         if ( isset( $_GET["tab"] ) && $_GET["tab"] === 'workflows' ) {
             wp_register_script( 'konva', 'https://unpkg.com/konva@8.1.1/konva.min.js', false, '8.1.1' );
+            wp_register_script( 'dt-utilities-workflows-node-start', disciple_tools()->admin_js_url . 'dt-utilities-workflows-node-start.js', false, '1.0' );
             wp_enqueue_script( 'dt_utilities_workflows_script', disciple_tools()->admin_js_url . 'dt-utilities-workflows.js', [
                 'jquery',
                 'lodash',
-                'konva'
+                'konva',
+                'dt-utilities-workflows-node-start'
             ], filemtime( disciple_tools()->admin_js_path . 'dt-utilities-workflows.js' ), true );
         }
     }

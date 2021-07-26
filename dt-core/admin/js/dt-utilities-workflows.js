@@ -183,6 +183,8 @@ jQuery(function ($) {
 
     $('#workflows_properties_section_display_area').html($('#workflows_props_node_start').html());
 
+    let start = new DtUtilitiesWorkflowsNodeStart($);
+    start.say_hello();
 
     // Display node properties
     $('#workflows_properties_section_div').fadeIn('fast');
